@@ -64,14 +64,14 @@ $ pipenv install -dev pep8, pylint, autopep8
 <p>Às vezes salvamos um arquivo e algum errinho acaba passando despercebido. Para impedir isso, podemos dizer para o vscode para ele formatar nosso código quando o salvarmos. É aqui que o autopep8 se encaixa. Ele será a ferramenta que utilizaremos para isso. </p>
 
 ```
- "python.formatting.provider": "autopep8",
+"python.formatting.provider": "autopep8",
   
 "[python]": {
   "editor.formatOnSave": true,
-	"editor.rulers": [79, 120],
+  "editor.rulers": [79, 120],
 },
 ```
-<p>Agora, note que colocamos algumas configurações dentro da propriedade <i>[python]</i>. Isso define comportamentos do editor que funcionarão apenas em arquivos python. Esta propriedade pode ser usada com qualquer linguagem, ex: <i>[javascript]</i>, <i>[html]</i>. Aqui dizemos para o vscode formatar os arquivos ao salvar e definimos linhas guias laterais.
+<p>Agora, note que colocamos algumas configurações dentro da propriedade <i>[python]</i>. Isso define comportamentos do editor que funcionarão apenas em arquivos com a extensão da linguagem colocanda entre colchetes, no nosso caso o python. Aqui dizemos para o vscode formatar os arquivos ao salvar e definimos linhas guias laterais.
 </li
 
 </ul>
