@@ -9,7 +9,7 @@
 
 <h2>Quer entender as configurações? Então leia as instruções você mesmo!</h2>
 
-<p>O arquivo .vscode/settings.json dentro do seu projeto define as configurações do ambiente de desenvolvimento para aquele projeto. Sendo assim, as configurações setadas neste arquivo serão usadas apenas no ambiente deste projeto.</p>
+<p>O arquivo .vscode/settings.json dentro do seu projeto define suas configurações do ambiente de desenvolvimento, de forma que estas configurações serão utilizadas apenas neste ambiente.</p>
 
 <ul list-style="circle">
 
