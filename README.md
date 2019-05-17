@@ -100,19 +100,19 @@ No primeiro campo colocaremos o caminho até o arquivo de configurações do pro
 <hr>
 <li>
 <p>
-Agora procure pela extensão <a href="https://github.com/vscode-django/vscode-django">django</a>. Esta habilita              diversos recursos, como syntax e color highlight dentro dos arquivos de template. Tem bastante configuração, então vou explicar uma por uma.
+Agora procure pela extensão <a href="https://github.com/vscode-django/vscode-django">django</a>. Esta, habilita              diversos recursos, como syntax e color highlight dentro dos arquivos de template.
 </p>
   
 <p>
 Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com extensão <strong><i>.html</i></strong> for encontrado dentro de diretórios <strong><i>templates/</i></strong> ou <strong><i>project/templates/app/</i></strong> no noso projeto, ele seja entendido tanto como arquivo <strong><i>html</i></strong> quanto <strong><i>django-html</i></strong>. Além de configurações para o <strong>requirements.txt</strong>.
 
 ```
-	"files.associations": {
-		"**/templates/*.html": "django-html",                //  project/templates/file_name.html
-		"**/templates/**/*.html": "django-html",             //  project/templates/app/file_name.html
-		"**/templates/*": "django-txt",
-		"**/requirements{/**,*}.{txt,in}": "pip-requirements"
-	},
+"files.associations": {
+	"**/templates/*.html": "django-html",                //  project/templates/file_name.html
+	"**/templates/**/*.html": "django-html",             //  project/templates/app/file_name.html
+	"**/templates/*": "django-txt",
+	"**/requirements{/**,*}.{txt,in}": "pip-requirements"
+},
 ```
 <p>Agora vamos falar para o emmet que ele deve incluir o <strong>html</strong> e o <strong>django-html</strong>.</p>
 
@@ -123,3 +123,5 @@ Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com e
 </li>
 </li>
 </ul>
+
+<h3>É isso =) Espero ter te ajudado.</h3>
