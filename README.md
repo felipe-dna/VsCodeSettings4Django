@@ -51,7 +51,7 @@ $ pipenv -dev install pep8, pylint, autopep8
  ```
  
 <p>
-Perceba o parâmetro recebido é o caminho para a instância do python dentro do ambiente virtual.   
+Perceba que o parâmetro recebido é sempre o caminho para a instância do python dentro do ambiente virtual.   
 </p>
 </li>
 
@@ -79,6 +79,7 @@ $ pipenv install -dev pep8, pylint, autopep8
 </p>
 
 <p>Primeiro falamos para o vscode que queremos utilizar tanto pylint quanto o pep8 para "lintar" nosso código.
+	
 ```
 "python.linting.pep8Enabled": true,
 "python.linting.pylintEnabled": true,
