@@ -27,6 +27,8 @@ $ pipenv -dev install pep8, pylint, autopep8
 <p>Pronto, estão feitas as configurações</p>
 
 <br/>
+<hr />
+
 <h3>Quer entender as configurações? Então leia as instruções, siga o tutorial abaixo e faça você mesmo!</h3>
 
 <p>O arquivo .vscode/settings.json dentro do seu projeto define suas configurações do ambiente de desenvolvimento, de forma que estas configurações serão utilizadas apenas neste ambiente.</p>
@@ -117,7 +119,7 @@ No primeiro campo colocaremos o caminho até o arquivo de configurações do pro
 </li>
 
 <br/>
-<hr>
+
 <li>
 <p>
 Agora procure pela extensão <strong><a href="https://github.com/vscode-django/vscode-django">django</a></strong>. Esta, habilita diversos recursos, como syntax e color highlight dentro dos arquivos de template.
@@ -144,5 +146,7 @@ Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com e
 </li>
 </li>
 </ul>
+
+<hr/>
 
 <h3>É isso =) <br/> Espero ter te ajudado.</h3>
