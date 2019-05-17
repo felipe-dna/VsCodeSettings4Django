@@ -6,8 +6,28 @@
   ``` 
   my_project/.vscode/  
   ```
+<p>Dentro do seu ambiente virtual instale os pacotes: </p>
 
-<h2>Quer entender as configurações? Então leia as instruções você mesmo!</h2>
+```
+$ pipenv -dev install pep8, pylint, autopep8
+```
+<strong>Ou, se você não utiliza pipenv</strong><br/>
+
+```
+(env)~ $ pip install pep8, pylint, autopep8
+```
+
+<p>Instale as extensões <strong><a href="https://marketplace.visualstudio.com/items?itemName=shamanu4.django-intellisense"      target="blank">django-intellisense</a></strong> e <strong><a href="https://github.com/vscode-django/vscode-django">django</a></strong>. Depois que instalar, abra o <i>.vscode/settings.json</i> e mude as seguintes propriedades:
+</p>
+
+```
+"djangointellisense.settingsModule": "",  // caminho para o arquivo de configurações do projeto
+"djangointellisense.projectRoot": "",     // caminho para a raiz do projeto, onde o arquivo manage.py está
+```
+<p>Pronto, estão feitas as configurações</p>
+
+<br/>
+<h3>Quer entender as configurações? Então leia as instruções, siga o tutorial abaixo e faça você mesmo!</h3>
 
 <p>O arquivo .vscode/settings.json dentro do seu projeto define suas configurações do ambiente de desenvolvimento, de forma que estas configurações serão utilizadas apenas neste ambiente.</p>
 
@@ -100,7 +120,7 @@ No primeiro campo colocaremos o caminho até o arquivo de configurações do pro
 <hr>
 <li>
 <p>
-Agora procure pela extensão <a href="https://github.com/vscode-django/vscode-django">django</a>. Esta, habilita              diversos recursos, como syntax e color highlight dentro dos arquivos de template.
+Agora procure pela extensão <strong><a href="https://github.com/vscode-django/vscode-django">django</a></strong>. Esta, habilita diversos recursos, como syntax e color highlight dentro dos arquivos de template.
 </p>
   
 <p>
@@ -114,6 +134,7 @@ Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com e
 	"**/requirements{/**,*}.{txt,in}": "pip-requirements"
 },
 ```
+
 <p>Agora vamos falar para o emmet que ele deve incluir o <strong>html</strong> e o <strong>django-html</strong>.</p>
 
 ```
@@ -124,4 +145,4 @@ Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com e
 </li>
 </ul>
 
-<h3>É isso =) Espero ter te ajudado.</h3>
+<h3>É isso =) <br/> Espero ter te ajudado.</h3>
