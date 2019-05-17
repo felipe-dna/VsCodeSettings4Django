@@ -81,17 +81,33 @@ $ pipenv install -dev pep8, pylint, autopep8
 <p>Para resolver isso, vamos instalar 2 extensões no nosso vscode.</p>
 
 <ul list-style="circle">
-  <li>
-    <p>A primeira é <strong><a href="https://marketplace.visualstudio.com/items?itemName=shamanu4.django-intellisense"              target="blank">django-intellisense</a></strong>. Segundo sua própria descrição, provê autocomplete para todas as              propriedades geradas pelo Django.
-    <p>
-    <p>Agora vamos configurar algumas coisas no nosso settings.json</p>
+<li>
+<p>A primeira é <strong><a href="https://marketplace.visualstudio.com/items?itemName=shamanu4.django-intellisense"              target="blank">django-intellisense</a></strong>. Segundo sua própria descrição, provê autocomplete para todas as              propriedades geradas pelo Django.
+<p>
+<p>Agora vamos configurar algumas coisas no nosso settings.json</p>
+
+```
+"djangointellisense.settingsModule": "your-project-nam.settings.py", 
+"djangointellisense.projectRoot": "path/to/your/project/root",
+```
     
-    ```
-    "djangointellisense.settingsModule": "your-project-nam.settings.py", 
-    "djangointellisense.projectRoot": "path/to/your/project/root",
-    ```
-  </li>
-  <p>No primeiro campo colocaremos o caminho até o arquivo de configurações do projeto (settings.py). Se você dividiu este        arquivo de acordo com os ambientes (development, production), coloque o caminho para o arquivo referente ao ambiente de      desenvolvimento. O campo seguinte recebe o caminho para a raiz do seu projeto, onde está o arquivo      <strong>manage.py</strong>. 
-  </p>
+<p>
+No primeiro campo colocaremos o caminho até o arquivo de configurações do projeto (settings.py). Se você dividiu este       arquivo de acordo com os ambientes (development, production), coloque o caminho para o arquivo referente ao ambiente         de desenvolvimento. O campo seguinte recebe o caminho para a raiz do seu projeto, onde está o arquivo        <strong>manage.py</strong>. 
+</p>
+</li>
+  
+<li>
+<p>
+Agora procure pela extensão <a href="https://github.com/vscode-django/vscode-django">django</a>. Esta habilita              diversos recursos, como syntax e color highlight dentro dos arquivos de template. Tem bastante configuração, então vou explicar uma por uma.
+</p>
+  
+<p>
+Primeiro vamos setar a ssociação de arquivos, para que quando um arquivo com extensão <strong><i>.html</i></strong> for encontrado dentro de diretórios <strong><i>templates/</i></strong> ou <strong><i>project/templates/app/</i></strong> no noso projeto, ele seja entendido tanto como arquivo <strong><i>html</i></strong> quanto <strong><i>django-html</i></strong>.
+
+```
+
+```
+
+</li>
 </li>
 </ul>
