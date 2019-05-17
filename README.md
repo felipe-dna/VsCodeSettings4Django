@@ -71,7 +71,27 @@ $ pipenv install -dev pep8, pylint, autopep8
   "editor.rulers": [79, 120],
 },
 ```
-<p>Agora, note que colocamos algumas configurações dentro da propriedade <i>[python]</i>. Isso define comportamentos do editor que funcionarão apenas em arquivos com a extensão da linguagem colocanda entre colchetes, no nosso caso o python. Aqui dizemos para o vscode formatar os arquivos ao salvar e definimos linhas guias laterais.
+<p>Agora, note que colocamos algumas configurações dentro da propriedade <i>[python]</i>. Isso define comportamentos do editor que funcionarão apenas em arquivos com a extensão da linguagem colocada entre os colchetes([]), no nosso caso o python. Aqui dizemos para o vscode formatar os arquivos ao salvar e definimos linhas guias laterais.
 </li
 
+<li>
+
+<h5>Templates</h5>
+<p>O Django possui sua própria linguagem de templates, o que nos acaba deixando com tags diferentes dentro de arquivos html.</p>
+<p>Para resolver isso, vamos instalar 2 extensões no nosso vscode.</p>
+
+<ul list-style="circle">
+  <li>
+    <p>A primeira é <strong><a href="https://marketplace.visualstudio.com/items?itemName=shamanu4.django-intellisense"              target="blank">django-intellisense</a></strong>. Segundo sua própria descrição, provê autocomplete para todas as              propriedades geradas pelo Django.
+    <p>
+    <p>Agora vamos configurar algumas coisas no nosso settings.json</p>
+    
+    ```
+    "djangointellisense.settingsModule": "your-project-nam.settings.py", 
+    "djangointellisense.projectRoot": "path/to/your/project/root",
+    ```
+  </li>
+  <p>No primeiro campo colocaremos o caminho até o arquivo de configurações do projeto (settings.py). Se você dividiu este        arquivo de acordo com os ambientes (development, production), coloque o caminho para o arquivo referente ao ambiente de      desenvolvimento. O campo seguinte recebe o caminho para a raiz do seu projeto, onde está o arquivo      <strong>manage.py</strong>. 
+  </p>
+</li>
 </ul>
